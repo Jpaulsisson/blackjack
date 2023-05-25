@@ -1,0 +1,165 @@
+@keyframes blink {
+  from {
+    filter:brightness(90%);
+    box-shadow: none;
+  }
+  to {
+    filter: brightness(150%);
+    box-shadow: 0 0 8px goldenrod;
+  }
+}
+
+/* Blackjack Yay! */
+.title {
+  font-size: clamp(2rem, 8vw, 4rem);
+  color: hsl(178, 100%, 13%);
+  -webkit-text-stroke: .1px goldenrod;
+  text-align: center;
+  background-color: hsl(183, 58%, 10%);
+}
+
+.title-broke {
+  font-size: clamp(2rem, 8vw, 4rem);
+  color: hsl(178, 100%, 13%);
+  -webkit-text-stroke: .1px goldenrod;
+  text-align: center;
+  background-color: hsl(183, 58%, 10%);
+  animation: blink 1000ms alternate 0s infinite;
+}
+
+.title-span {
+  font-size: clamp(.5rem, 3vw, 2rem);
+}
+
+/* Player bank, bet input form, game buttons */
+.buttons-and-bank-container {
+  width: 100%;
+  display: block;
+}
+
+.player-bank-container {
+  width: 100%;
+  min-height: 10vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(0, 0%, 10%);
+}
+.player-bank {
+  color: goldenrod;
+  width: 30%;
+  border: 3px double goldenrod;
+  font-size: clamp(.5rem, 2vw, 2rem);
+  text-align: center;
+}
+
+.bet-input-form {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.bet-input {
+  width: 70%;
+  aspect-ratio: 3.75;
+  font-size: clamp(.25rem, 2vw, 2rem);
+  border: 5px double goldenrod;
+  color: goldenrod;
+  background-color: hsl(178, 100%, 13%);
+  text-align: center;
+}
+
+.bet-input::placeholder {
+  color: goldenrod;
+}
+
+.bet-input:focus {
+  color: goldenrod;
+  background-color:hsl(178, 100%, 23%);
+}
+
+.bet-button {
+  width: 20%;
+  aspect-ratio: 1.25;
+  border: 2px double goldenrod;
+  font-size: clamp(.5rem, 2vw, 2rem);
+  color: hsl(150, 50%, 50%);
+  background-color: rgba(0, 0, 0, 0.554);
+  text-shadow: 0 0 5px hsl(150, 50%, 50%);
+  animation: blink 750ms alternate 0s infinite;
+}
+
+.bet-button:disabled {
+  color: black;
+  filter: brightness(50%);
+  animation: none;
+}
+
+.current-bet {
+  width: 30%;
+  aspect-ratio: 7.75;
+  border: 3px double goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(.5rem, 2vw, 2rem);
+}
+
+.current-bet-amount {
+  color: goldenrod;
+}
+
+.button-container {
+  width: 100%;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5rem;
+}
+
+.button-container button {
+  width: 15%;
+  font-size: clamp(.75rem, 5vw, 2.5rem);
+  border: 2px double goldenrod;
+  border-radius: 100vmax;
+  background-color: rgb(1, 52, 1);
+}
+
+.hand {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+  perspective: 1000px;
+}
+
+.cards {
+  max-width: 15%;
+}
+
+.card-backface {
+  width: clamp(50px, 15%, 222px);
+  aspect-ratio: 113 / 157;
+  border: 5px double rgb(240, 238, 220);
+  border-radius: 15px;
+  background-image: 
+  linear-gradient(90deg, hsla(210, 58%, 20%, .5) 0 50%, rgba(240, 238, 220, 0.491) 50% 100%),
+  linear-gradient(45deg, hsla(210, 58%, 20%, .5) 0 50%, rgba(240, 238, 220, 0.49) 50% 100%),
+  radial-gradient(circle at center, hsla(210, 58%, 20%, .5) 0 50%, rgba(240, 238, 220, 0.49) 50% 100%),
+  linear-gradient(135deg, hsla(210, 58%, 20%, .5) 0 50%, rgba(240, 238, 220, 0.49) 50% 100%);
+  background-size: 4% 4%;
+}
+
+.score {
+  font-size: clamp(.75rem, 2.25vw, 2.25rem);
+  color: rgb(194, 139, 0);
+  text-align: center;
+  -webkit-text-stroke: .1px hsl(0, 0%, 20%);
+  text-shadow: 1px 1px 7px rgb(240, 238, 220);
+}

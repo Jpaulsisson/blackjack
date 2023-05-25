@@ -1,0 +1,35 @@
+:root {
+  font-size: 18px;
+}
+
+*, 
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rye', cursive;
+  
+}
+
+html,
+body {
+  min-height: 100vh;
+  color-scheme: dark light;
+  letter-spacing: 2px;
+  
+}
+
+body {
+  background-image: radial-gradient(circle at center, hsl(22, 35%, 73%), hsl(27, 35%, 63%),  hsl(22, 50%, 52%), hsl(22, 50%, 42%), hsl(22, 45%, 31%), hsl(22, 31%, 21%), hsl(22, 22%, 17%), hsl(22, 35%, 13%));
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+button {
+  border: none;
+}
+
