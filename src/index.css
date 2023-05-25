@@ -21,7 +21,7 @@ body {
 }
 
 body {
-  background-image: radial-gradient(circle at center, hsl(22, 35%, 73%), hsl(27, 35%, 63%),  hsl(22, 50%, 52%), hsl(22, 50%, 42%), hsl(22, 45%, 31%), hsl(22, 31%, 21%), hsl(22, 22%, 17%), hsl(22, 35%, 13%));
+  background-image: radial-gradient(circle at center, hsl(82, 17%, 25%), hsl(91, 27%, 18%),  hsl(90, 37%, 17%), hsl(90, 40%, 22%), hsl(90, 45%, 21%), hsl(90, 31%, 21%), hsl(90, 30%, 17%), hsl(90, 35%, 13%));
 }
 
 img {
