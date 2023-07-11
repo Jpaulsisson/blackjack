@@ -1,1 +1,2 @@
 # blackjack
+My good buddy, Daniel Bailey, was asked to create a Blackjack game as part of an interview process. When he told me about it, he also suggested that it would be a great project for me to test my knowledge of HTML, CSS, JS, and React... so obviously I started building it the next morning. I truly enjoyed this build and how much I learned through the process of making it not only functional but deploying it.
