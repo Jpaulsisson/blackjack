@@ -19,4 +19,11 @@ A challenge for sure, but the first time I made a bet and lost all my money beca
 ![JS Icon](https://github.com/Jpaulsisson/blackjack/assets/107195036/cf03844b-6e3e-4865-9ace-4de585ddf07d)
 ![React Icon](https://github.com/Jpaulsisson/blackjack/assets/107195036/4902bbeb-4e7d-4b64-99e0-10b6adb2ebcd)
 
+---
 
+---
+
+### Here's a cool pic I drew of my son:
+unrelated to project, but he's so cute with that Elton John look
+
+![My son](./src/orin-bath-cropped.png)
