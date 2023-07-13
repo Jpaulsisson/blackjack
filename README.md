@@ -1,7 +1,7 @@
 # ***[Blackjack](https://jpaulsisson-blackjack.netlify.app/)***
 
-### Quick Overview:
-It's a Blackjack game built with HTML, CSS, JS and React.
+### Preview
+<img src="blackjack.png" width="500" height="300"/>
 
 ### Things I learned:
   - Forms/Inputs/Submit
@@ -16,7 +16,7 @@ It's a Blackjack game built with HTML, CSS, JS and React.
   - React hooks `useEffect` and `useState`
   - CSS `grid` and `flexbox`
   - How to use CSS `clamp` on fonts properly <----game changer
-  - Hot to manipulate the ` background ` property in CSS
+  - How to manipulate the ` background ` property in CSS
   - How to deploy with Netlify
 
 ---
@@ -36,8 +36,7 @@ It's a Blackjack game built with HTML, CSS, JS and React.
 ![CSS3 Icon](https://github.com/Jpaulsisson/blackjack/assets/107195036/8f06e450-42f8-4725-b9e9-3edf8d30d7cd)
 ![JS Icon](https://github.com/Jpaulsisson/blackjack/assets/107195036/cf03844b-6e3e-4865-9ace-4de585ddf07d)
 ![React Icon](https://github.com/Jpaulsisson/blackjack/assets/107195036/4902bbeb-4e7d-4b64-99e0-10b6adb2ebcd)
-![Vite Icon](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/128px-Vitejs-logo.svg.png)
-
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Vitejs-logo.svg/128px-Vitejs-logo.svg.png" width="95" height="95" />
 ---
 
 ### Things I'm proud of:
