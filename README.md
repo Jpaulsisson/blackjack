@@ -1,7 +1,7 @@
 # ***[Blackjack](https://jpaulsisson-blackjack.netlify.app/)***
 
 ### Preview
-<img src="blackjack.png" width="500" height="300"/>
+<img src="Blackjack.png" width="500" height="300"/>
 
 ### Things I learned:
   - Forms/Inputs/Submit
