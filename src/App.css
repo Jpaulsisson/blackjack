@@ -159,7 +159,8 @@
 
 .score {
   font-size: clamp(.75rem, 2.25vw, 2.25rem);
-  color: rgb(194, 139, 0);
+  color: rgb(245, 198, 80);
+  /* color: aqua; */
   text-align: center;
   -webkit-text-stroke: .1px hsl(0, 0%, 20%);
   text-shadow: 0px 0px 3px rgb(240, 238, 220);
