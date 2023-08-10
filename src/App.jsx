@@ -6,10 +6,15 @@ function App() {
   const [freshDeck, setFreshDeck] = useState([]);
   const [playerHand, setPlayerHand] = useState({ player: 'player', cards: [] });
   const [dealerHand, setDealerHand] = useState({ player: 'dealer', cards: [] });
-  const [playerBank, setPlayerBank] = useState(10000);
+  const [playerBank, setPlayerBank] = useState(localStorage.getItem('playerBank') || 10000);
   const [bet, setBet] = useState(0);
   const [finalBet, setFinalBet] = useState(0);
   const [stayStatus, setStayStatus] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem('playerBank', playerBank);
+    console.log(localStorage.getItem('playerBank'))
+  })
 
   useEffect(() => {
     getDeck();
@@ -324,6 +329,10 @@ function App() {
     setFinalBet(bet);
   };
 
+  const startNewGame = () => {
+    setPlayerBank(10000);
+  }
+
   const playerBlackjack = (finalBet, playerBank) => {
     const newBankAmount = (finalBet * 3) / 2 + finalBet + playerBank;
     setPlayerBank(newBankAmount);
@@ -380,9 +389,12 @@ function App() {
     <>
       {broke
         ? (
-        <h1 className="title-broke">
-          <span className="title-span">💔 </span>You are BROKE, Jack <span className="title-span">😞</span>
-        </h1>
+          <div className='broke-box'>
+            <h1 className="title-broke">
+              <span className="title-span">💔 </span>You are BROKE, Jack <span className="title-span">😞</span>
+            </h1>
+            <button className='new-game-btn' onClick={startNewGame}>Start new game</button>
+          </div>  
         
         ) : (
           <h1 className='title'>
@@ -401,7 +413,7 @@ function App() {
               onChange={handleBetInput}
               type="number"
               step={100}
-              placeholder="Bet..."
+              placeholder="place a bet to play"
               className="bet-input"
             />
             <button
@@ -410,7 +422,7 @@ function App() {
               type="submit"
               className="bet-button"
             >
-              Bet
+              bet
             </button>
           </form>
           <span className="current-bet">
@@ -486,7 +498,7 @@ function App() {
       <h2 className="score">
         {calcScore(playerHand) > 0 || calcScore(playerHand) === 'BUSTED'
           ? `Player Score: ${calcScore(playerHand)}`
-          : 'click deal to Start'}
+          : 'click deal to play'}
       </h2>
     </>
   );
